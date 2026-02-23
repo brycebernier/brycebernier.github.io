@@ -129,6 +129,50 @@ body {
   color: #777777;
 }
 
+/* Text link */
+.text-link {
+  text-decoration: underline;
+  color: var(--accent);
+}
+
+/* Workout table */
+.workout-table-section {
+  margin-top: 2rem;
+}
+
+.workout-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.75rem;
+  background-color: #ffffff;
+}
+
+.workout-table th,
+.workout-table td {
+  border: 1px solid #dddddd;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+}
+
+.workout-table th {
+  background-color: var(--secondary);
+}
+
+/* Nutrition cards */
+.nutrition-grid {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.nutrition-card {
+  flex: 1;
+  border: 1px solid #dddddd;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
 /* Call-to-action */
 .cta {
   text-align: center;
@@ -152,6 +196,7 @@ body {
   color: #e5e7eb;
   padding: 1rem 2rem;
   font-size: 0.85rem;
+  margin-top: 2rem;
 }
 
 .footer-links {
@@ -166,4 +211,20 @@ body {
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+
+/* Basic responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .feature-grid,
+  .nutrition-grid {
+    flex-direction: column;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+  }
 }
